@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/4bd930b540.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/vendor-onboarding.css">
+    <title>Vendor Onboarding Main Screen</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle text-right" id="menu_icon"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <button id="close_toggle" type="button" class="navbar-toggle close_btn"> 
+    </button>
+                <a class="navbar-brand" href="index.htm"><img src="images/logo-white.png"></a>
+            </div>
+            <div class="pull-right  user"> <span><img src="images/bitmap.png" alt=""></span>
+                <h5>Mr. Nitin JayaKrishnan</h5>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 main">
+                <div class="container users">
+                    <div class="container" id="container">
+                        <ul class="nav nav-pills" id="li">
+                            <li class="active">
+                                <a data-toggle="pill" href="#menu1">
+                                    <img src="images/warehouse.svg" alt="">
+                                    <span>Company Details</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="pill" href="#home">
+
+                                    <img src="images/Representative Details.png" alt="">
+                                    <span>Representative Details</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="pill" href="#menu2">
+                                    <img src="images/wallet.svg" alt="">
+                                    <span>Payment Details</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="pill" href="#menu3">
+                                    <img src="images/Upload Document.png" alt="">
+                                    <span>Company Documents</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="container tab-pane fade in active" id="home" style="border-bottom: 0;">
+                            <div class="container second">
+                                <div class="col-md-12">
+                                    <div>
+                                        <div class="form-group">
+                                            <label>Name of contact person</label>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email address</label>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Mobile number</label>
+                                            <input class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <a href="#home" class="btn btn-success center-block" style="margin-bottom: 40px;">Save</a>
+                            </div>
+                        </div>
+                        <div class="container tab-pane fade" id="menu1" style="border-bottom: 0;">
+                            <div class="container second">
+                                <div class="col-md-12">
+                                    <div>
+                                        <div class="form-group">
+                                            <label>Company name</label>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Telephone number</label>
+                                            <input class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-inline">
+                                        <div class="form-group">
+                                            <p>Address</p>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="form-group right">
+                                            <p>State</p>
+                                            <select class="form-control" id="sel1">
+                                <option>Select State here</option>
+                        </select>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-inline">
+                                        <div class="form-group">
+                                            <p>City</p>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="form-group right">
+                                            <p>Pincode</p>
+                                            <input class="form-control">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="container">
+                                <a href="#menu1" class="btn btn-success center-block" style="margin-bottom: 40px;">Next</a>
+                            </div>
+                        </div>
+                        <div class="container tab-pane fade" id="menu2" style="border-bottom: 0;">
+                            <div class="container second">
+                                <div class="col-md-12">
+                                    <div class="form-inline">
+                                        <div class="form-group">
+                                            <p>Company name</p>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="form-group right">
+                                            <p>Telephone number</p>
+                                            <input class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-inline">
+                                        <div class="form-group">
+                                            <p>Bank name</p>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="form-group right">
+                                            <p>Bank account number</p>
+                                            <input class="form-control">
+                                        </div>
+                                    </div>
+                                    <div style="padding-top: 10px;">
+                                        <div class="form-group">
+                                            <p>Bank IFSC number</p>
+                                            <input class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-inline">
+                                        <div class="form-group">
+                                            <p>Bank Address</p>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                        <div class="form-group right">
+                                            <p>State</p>
+                                            <select class="form-control">
+                                <option>Select State here</option>
+                        </select>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-inline">
+                                        <div class="form-group">
+                                            <p>City</p>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="form-group right">
+                                            <p>Pincode</p>
+                                            <input class="form-control">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="container text-center">
+                                <a href="#menu3" class="btn btn-success">Save</a>
+                            </div>
+                        </div>
+                        <div class="container tab-pane fade" id="menu3" style="border-bottom: 0;">
+                            <div class="container second">
+                                <div class="com-md-6">
+                                    <div class="col-md-12 first">
+                                        <div class="col-md-6 address">
+                                            <p>Copy of cancelled cheque</p>
+                                            <span class="upload-path"></span>
+                                            <span class="buttons">
+                                                <img src="images/Eye.svg" alt="">
+                                                <img src="images/delete.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="col-md-6 upload">
+                                            <div class="browse-wrap">
+                                                <div class="title">
+                                                    <img src="images/cloud-storage-uploading-option.svg" alt="">
+                                                    <p>Upload</p>
+                                                    <input type="file" name="upload" class="Uplaod" title="Upload">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <hr style="margin-top: 0;margin-bottom: 0;border: 1px solid #eee;">
+                                    <div class="col-md-12 first">
+                                        <div class="col-md-6 address">
+                                            <p>Copy of cancelled cheque</p>
+                                            <span class="upload-path"></span>
+                                            <span class="buttons">
+                                                <img src="images/Eye.svg" alt="">
+                                                <img src="images/delete.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="col-md-6 upload">
+                                            <div class="browse-wrap">
+                                                <div class="title">
+                                                    <img src="images/cloud-storage-uploading-option.svg" alt="">
+                                                    <p>Upload</p>
+                                                    <input type="file" name="upload" class="Uplaod" title="Upload">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <hr style="margin-top: 0;margin-bottom: 0;border: 1px solid #eee;">
+                                    <div class="col-md-12 first">
+                                        <div class="col-md-6 address">
+                                            <p>Copy of cancelled cheque</p>
+                                            <span class="upload-path"></span>
+                                            <span class="buttons">
+                                                <img src="images/Eye.svg" alt="">
+                                                <img src="images/delete.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="col-md-6 upload">
+                                            <div class="browse-wrap">
+                                                <div class="title">
+                                                    <img src="images/cloud-storage-uploading-option.svg" alt="">
+                                                    <p>Upload</p>
+                                                    <input type="file" name="upload" class="Uplaod" title="Upload">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container text-center">
+                                <a href="vendor-onboarding-thankyou.htm" class="btn btn-success">Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="onboarding.js"></script>
+</body>
+
+</html>
