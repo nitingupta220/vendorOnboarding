@@ -511,15 +511,15 @@ nav-pills>li>a {
     .container {
         width: 1170px;
     }
-    .users #container {
-        padding-right: 0;
-    }
+   .users #container {
+	padding-right:0;
+	}
     .nav-span {
         padding-left: 0;
     }
     #li li {
-        width: 291px;
-    }
+        width: 287px;
+    }    
 }
 
 @media (max-width:1280px) {
@@ -527,6 +527,13 @@ nav-pills>li>a {
         margin-right: 20px;
         padding-right: 0;
     }
+.users #container {
+        padding-right: 0;
+	padding-left:15px;
+    }
+ #users {
+	margin-right:20px;	
+}
     #li li {
         padding: 30px;
         padding-top: 0;
@@ -569,3 +576,10 @@ nav-pills>li>a {
 .next:hover, .next:focus {
     color: white;
 }
+
+@media (min-width:992px) {
+    .col-md-4 {
+        width: 35.333%;
+    }
+}
+
