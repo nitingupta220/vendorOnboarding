@@ -527,6 +527,11 @@ nav-pills>li>a {
         
         padding-right: 0;
     }
+.table {
+	position:relative;
+	top:60px;
+	left:-43px;
+}
 .users #container {
         padding-right: 0;
 	padding-left:15px;
