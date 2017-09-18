@@ -55,7 +55,7 @@
                     <p>Base Freight</p>
                 </div>
                 <div class="col-md-2">
-                    <p>Settings</p>
+                    <p>View</p>
                 </div>
                 <div class="col-md-2">
                     <p>Accept</p>
@@ -78,7 +78,7 @@
                     <p>RS 50,000/Per trip</p>
                 </div>
                 <div class="col-md-2">
-                    <a href="#" data-toggle="modal" data-target="#index">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="images/Settings.png" alt="">
                     </a>
                 </div>
@@ -95,6 +95,187 @@
             </div>
             <hr>
 
+        </div>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title text-center">Settings</h4>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="nav nav-pills">
+                            <li class="active"><a data-toggle="pill" href="#sla1">CONTRACTED RATES</a></li>
+                            <li><a data-toggle="pill" href="#sla2">SLA TIME </a></li>
+
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="sla1" class="tab-pane fade in active">
+                               
+                                <div class="container">
+                                    <div class="col-xs-3 col-sm-3 title"><span>Charge Type</span></div>
+                                    <div class="col-xs-3 col-sm-3 no-padding title"><span>Amount</span></div>
+                                    <div class="col-xs-3 col-sm-3 title"><span>Unit</span></div>
+                                </div>
+                                <div class="container">
+                                    <div class="form-group">
+                                        <div class="col-xs-3 col-sm-3 pad-right-0">Contracted Freight Charges</div>
+                                        <div class="col-xs-2 col-sm-3 no-padding">
+                                            <input disabled type="text" class="form-control" digit-only="" autocomplete="off" ng-model="sla.freight_charges" id="email" placeholder="" disabled>
+                                        </div>
+                                        <div class="col-xs-2 col-sm-3"><input disabled type="text" class="form-control" value="" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container" style="padding-top: 0;margin-top: -8px;">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <div class="col-xs-2 col-sm-3 pad-right-0">Cancellation Charges</div>
+                                            <div class="col-xs-2 col-sm-3 no-padding">
+                                                <input disabled disabled type="text" class="form-control" digit-only="" autocomplete="off" ng-model="sla.cancellation_charges" id="email" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container multi">
+                                    <div class="form-group">
+                                        <div class="col-xs-2 col-sm-3 pad-right-0">Loading Detention Charges (Cumulative) </div>
+                                        <div class="col-sm-9">
+                                            <div class="col-sm-2">
+                                                <input disabled disabled type="text" value="">
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <input disabled type="text" value="">
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <input disabled type="text" value="">
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <input disabled type="text" value="">
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <input disabled type="text" value="">
+                                            </div>
+                                            <div class="col-sm-2 hidden">
+                                                <input disabled type="text" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container multi">
+                                    <div class="form-group">
+                                        <div class="col-xs-2 col-sm-3 pad-right-0">Transit Delay Penalty (Cumulative) </div>
+                                        <div class="col-sm-9">
+                                            <div class="col-sm-2">
+                                                <input disabled type="text" value="">
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <input disabled type="text" value="">
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <input disabled type="text" value="">
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <input disabled type="text" value="">
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <input disabled type="text" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container">
+                                    <div class="form-group">
+                                        <div class="col-xs-3 col-sm-3 pad-right-0">Unloading Delay Charges (Cumulative)</div>
+                                        <div class="col-xs-2 col-sm-3 no-padding">
+                                            <input disabled type="text" class="form-control" digit-only="" autocomplete="off" ng-model="sla.freight_charges" id="email" placeholder="">
+                                        </div>
+                                        <div class="col-xs-2 col-sm-3"><input disabled type="text" class="form-control" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <div class="col-xs-2 col-sm-3 pad-right-0">LR Charges</div>
+                                            <div class="col-xs-2 col-sm-3 no-padding">
+                                                <input disabled type="text" class="form-control" digit-only="" autocomplete="off" ng-model="sla.cancellation_charges" id="email" placeholder="">
+                                            </div>
+                                            <div class="col-xs-5 col-sm-4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="form-group">
+                                        <div class="col-xs-3 col-sm-3 pad-right-0">Unloading Delay Charges (Cumulative)</div>
+                                        <div class="col-xs-2 col-sm-3 no-padding">
+                                            <input disabled type="text" class="form-control" digit-only="" autocomplete="off" ng-model="sla.freight_charges" id="email" placeholder="">
+                                        </div>
+                                        <div class="col-xs-2 col-sm-3"><input disabled type="text" class="form-control" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="form-group">
+                                        <div class="col-xs-3 col-sm-3 pad-right-0">Unloading Delay Charges (Cumulative)</div>
+                                        <div class="col-xs-2 col-sm-3 no-padding">
+                                            <input disabled type="text" class="form-control" digit-only="" autocomplete="off" ng-model="sla.freight_charges" id="email" placeholder="">
+                                        </div>
+                                        <div class="col-xs-2 col-sm-3"><input disabled type="text" class="form-control" value="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="sla2" class="tab-pane fade">
+                                <div class="container">
+                                    <div class="col-xs-3 col-sm-3 title"><span>Charge Type</span></div>
+                                    <div class="col-xs-3 col-sm-3 no-padding title"><span>Value in days</span></div>
+                                </div>
+                                <div class="container">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <div class="col-xs-2 col-sm-3 pad-right-0">Maximum Unloading Time Allowed</div>
+                                            <div class="col-xs-2 col-sm-3 no-padding">
+                                                <input disabled type="text" class="form-control" digit-only="" autocomplete="off" ng-model="sla.cancellation_charges" id="email" placeholder="">
+                                            </div>
+                                            <div class="col-xs-5 col-sm-4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <div class="col-xs-2 col-sm-3 pad-right-0">Maximum Loading Time Allowed</div>
+                                            <div class="col-xs-2 col-sm-3 no-padding">
+                                                <input disabled type="text" class="form-control" digit-only="" autocomplete="off" ng-model="sla.cancellation_charges" id="email" placeholder="">
+                                            </div>
+                                            <div class="col-xs-5 col-sm-4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <div class="col-xs-2 col-sm-3 pad-right-0">Maximum Transit Time Allowed</div>
+                                            <div class="col-xs-2 col-sm-3 no-padding">
+                                                <input disabled type="text" class="form-control" digit-only="" autocomplete="off" ng-model="sla.cancellation_charges" id="email" placeholder="">
+                                            </div>
+                                            <div class="col-xs-5 col-sm-4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
         <div class="container data">
             <div class="row">
@@ -156,10 +337,10 @@
             <hr>
 
         </div>
-       
+
     </div>
     <div class="container text-center">
-         <a href="#" class="btn next">Proceed to Orders</a>
+        <a href="#" class="btn next">Proceed to Orders</a>
     </div>
 </body>
 
